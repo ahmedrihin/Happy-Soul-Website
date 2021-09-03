@@ -1,0 +1,4 @@
+$(document).ready(function(){$('.stickymenu').waypoint(function(direction){if(direction=='down'){$('#nav').addClass('sticky')}else{$('#nav').removeClass('sticky')}})
+$('.doctor-slider').slick({arrows:!1,dots:!0,infinite:!1,speed:300,slidesToShow:2,slidesToScroll:1,loops:!0,responsive:[{breakpoint:1024,settings:{slidesToShow:1,slidesToScroll:1,infinite:!0,dots:!0}},{breakpoint:600,settings:{slidesToShow:1,slidesToScroll:1}},{breakpoint:480,settings:{slidesToShow:1,slidesToScroll:1}}]});$('.counter').counterUp({delay:10,time:1000})
+var options={strings:['We are here for your care','Keep your mental health good'],typeSpeed:40,backSpeed:40,loop:!0};var typed=new Typed('.type',options);AOS.init({once:!0})})
+let preloader=document.querySelector("#preloader");window.addEventListener("load",vanish);function vanish(){preloader.classList.add('hidepreloader')}
